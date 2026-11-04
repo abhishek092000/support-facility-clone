@@ -1,0 +1,35 @@
+/* Feedback styles for the contact and free-trial forms.
+   These classes are new, so nothing in the original design is overridden. */
+
+.lead-form small.form-field-error {
+  display: block;
+  margin-top: 6px;
+  color: #c32638;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.lead-form [aria-invalid='true'] {
+  border-color: #c32638;
+}
+
+.lead-form .form-status {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.lead-form .form-status-error {
+  color: #8c1a28;
+  background: #fdecef;
+  border: 1px solid #f3c3cb;
+}
+
+.lead-form button[disabled] {
+  opacity: 0.72;
+  cursor: progress;
+}

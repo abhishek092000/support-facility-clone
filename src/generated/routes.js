@@ -1,9 +1,12 @@
-import { lazy } from 'react'
+// Generated route table. Page components are imported statically so the
+// router never paints a half-built tree on first load.
+
+import { components } from './pageComponents'
 
 export const pageRoutes = [
   {
     path: "/about",
-    Component: lazy(() => import('../pages/about.jsx')),
+    Component: components.PageAbout,
     title: "About Support Facility | Support Facility",
     description: "A technical operations partner for hosting companies, SaaS businesses and digital agencies.",
     canonical: "https://www.supportfacility.com/about/",
@@ -11,15 +14,15 @@ export const pageRoutes = [
   },
   {
     path: "/ai-decision-models-the-next-step-in-web-hosting-automation",
-    Component: lazy(() => import('../pages/ai-decision-models-the-next-step-in-web-hosting-automation.jsx')),
+    Component: components.PageAiDecisionModelsTheNextStepInWebHostingAutomation,
     title: "AI Decision Models: The Next Step in Web Hosting Automation | Support Facility",
-    description: "AI in web hosting is moving beyond chatbots. Decision models like Cloudflare\u2019s Clef can help hosting systems classify support requests, determine priority, route issues to the right team, and trigger automated actions. This article explores how AI decision models could make web hosting support faster, smarter, and more efficient.",
+    description: "AI in web hosting is moving beyond chatbots. Decision models like Cloudflare’s Clef can help hosting systems classify support requests, determine priority, route issues to the right team, and trigger automated actions. This article explores how AI decision models could make web hosting support faster, smarter, and more efficient.",
     canonical: "https://www.supportfacility.com/ai-decision-models-the-next-step-in-web-hosting-automation/",
     bodyClass: "wp-singular post-template-default single single-post postid-135 single-format-standard wp-embed-responsive wp-theme-astra wp-child-theme-astra-supportfacility-child sf-site ast-desktop ast-narrow-container ast-separate-container ast-no-sidebar astra-4.14.1 ast-blog-single-style-1 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header ast-normal-title-enabled",
   },
   {
     path: "/author/tony",
-    Component: lazy(() => import('../pages/author__tony.jsx')),
+    Component: components.PageAuthorTony,
     title: "Support Facility | 24/7 Technical Operations",
     description: "24/7 technical support, cloud and infrastructure solutions, cybersecurity services and white-label WordPress development.",
     canonical: "https://www.supportfacility.com/author/tony",
@@ -27,7 +30,7 @@ export const pageRoutes = [
   },
   {
     path: "/blog",
-    Component: lazy(() => import('../pages/blog.jsx')),
+    Component: components.PageBlog,
     title: "Blog | Support Facility",
     description: "Practical perspectives on WordPress agency delivery, cybersecurity planning and technical support operations.",
     canonical: "https://www.supportfacility.com/blog",
@@ -35,7 +38,7 @@ export const pageRoutes = [
   },
   {
     path: "/category/blog",
-    Component: lazy(() => import('../pages/category__blog.jsx')),
+    Component: components.PageCategoryBlog,
     title: "Support Facility | 24/7 Technical Operations",
     description: "24/7 technical support, cloud and infrastructure solutions, cybersecurity services and white-label WordPress development.",
     canonical: "https://www.supportfacility.com/category/blog",
@@ -43,7 +46,7 @@ export const pageRoutes = [
   },
   {
     path: "/category/cybersecurity-planning",
-    Component: lazy(() => import('../pages/category__cybersecurity-planning.jsx')),
+    Component: components.PageCategoryCybersecurityPlanning,
     title: "Support Facility | 24/7 Technical Operations",
     description: "24/7 technical support, cloud and infrastructure solutions, cybersecurity services and white-label WordPress development.",
     canonical: "https://www.supportfacility.com/category/cybersecurity-planning",
@@ -51,7 +54,7 @@ export const pageRoutes = [
   },
   {
     path: "/category/support-operations",
-    Component: lazy(() => import('../pages/category__support-operations.jsx')),
+    Component: components.PageCategorySupportOperations,
     title: "Support Facility | 24/7 Technical Operations",
     description: "24/7 technical support, cloud and infrastructure solutions, cybersecurity services and white-label WordPress development.",
     canonical: "https://www.supportfacility.com/category/support-operations",
@@ -59,7 +62,7 @@ export const pageRoutes = [
   },
   {
     path: "/category/wordpress-agencies",
-    Component: lazy(() => import('../pages/category__wordpress-agencies.jsx')),
+    Component: components.PageCategoryWordpressAgencies,
     title: "Support Facility | 24/7 Technical Operations",
     description: "24/7 technical support, cloud and infrastructure solutions, cybersecurity services and white-label WordPress development.",
     canonical: "https://www.supportfacility.com/category/wordpress-agencies",
@@ -67,7 +70,7 @@ export const pageRoutes = [
   },
   {
     path: "/cloud",
-    Component: lazy(() => import('../pages/cloud.jsx')),
+    Component: components.PageCloud,
     title: "Cloud operations | Support Facility",
     description: "Hands-on assistance for cloud migrations, resource management, monitoring, security and operational support.",
     canonical: "https://www.supportfacility.com/cloud/",
@@ -75,7 +78,7 @@ export const pageRoutes = [
   },
   {
     path: "/contact",
-    Component: lazy(() => import('../pages/contact.jsx')),
+    Component: components.PageContact,
     title: "Talk to Support Facility | Support Facility",
     description: "Discuss technical support, server management, cloud operations or white-label development.",
     canonical: "https://www.supportfacility.com/contact/",
@@ -83,7 +86,7 @@ export const pageRoutes = [
   },
   {
     path: "/cybersecurity",
-    Component: lazy(() => import('../pages/cybersecurity.jsx')),
+    Component: components.PageCybersecurity,
     title: "Cybersecurity services | Support Facility",
     description: "A coordinated security service portfolio covering technical testing, incident response, consulting and security operations.",
     canonical: "https://www.supportfacility.com/cybersecurity/",
@@ -91,7 +94,7 @@ export const pageRoutes = [
   },
   {
     path: "/cybersecurity/assessment",
-    Component: lazy(() => import('../pages/cybersecurity__assessment.jsx')),
+    Component: components.PageCybersecurityAssessment,
     title: "Cybersecurity assessment services | Support Facility",
     description: "Risk-led assessment services covering applications, infrastructure, cloud, APIs, databases and operational technology.",
     canonical: "https://www.supportfacility.com/cybersecurity/assessment/",
@@ -99,7 +102,7 @@ export const pageRoutes = [
   },
   {
     path: "/cybersecurity/assessment/api",
-    Component: lazy(() => import('../pages/cybersecurity__assessment__api.jsx')),
+    Component: components.PageCybersecurityAssessmentApi,
     title: "API and web services security | Support Facility",
     description: "Testing for API authentication, authorization, input handling, abuse scenarios and sensitive-data exposure.",
     canonical: "https://www.supportfacility.com/cybersecurity/assessment/api/",
@@ -107,7 +110,7 @@ export const pageRoutes = [
   },
   {
     path: "/cybersecurity/assessment/cloud",
-    Component: lazy(() => import('../pages/cybersecurity__assessment__cloud.jsx')),
+    Component: components.PageCybersecurityAssessmentCloud,
     title: "Cloud security assessment | Support Facility",
     description: "A structured cloud security assessment process for control-plane configuration and operational practices.",
     canonical: "https://www.supportfacility.com/cybersecurity/assessment/cloud/",
@@ -115,7 +118,7 @@ export const pageRoutes = [
   },
   {
     path: "/cybersecurity/assessment/database",
-    Component: lazy(() => import('../pages/cybersecurity__assessment__database.jsx')),
+    Component: components.PageCybersecurityAssessmentDatabase,
     title: "Database security assessment | Support Facility",
     description: "Assessment of database exposure, permissions, configuration, logging, encryption and patch posture.",
     canonical: "https://www.supportfacility.com/cybersecurity/assessment/database/",
@@ -123,7 +126,7 @@ export const pageRoutes = [
   },
   {
     path: "/cybersecurity/assessment/mobile-application",
-    Component: lazy(() => import('../pages/cybersecurity__assessment__mobile-application.jsx')),
+    Component: components.PageCybersecurityAssessmentMobileApplication,
     title: "Mobile application penetration testing | Support Facility",
     description: "Security testing for iOS and Android applications, local storage, communications and backend APIs.",
     canonical: "https://www.supportfacility.com/cybersecurity/assessment/mobile-application/",
@@ -131,7 +134,7 @@ export const pageRoutes = [
   },
   {
     path: "/cybersecurity/assessment/network",
-    Component: lazy(() => import('../pages/cybersecurity__assessment__network.jsx')),
+    Component: components.PageCybersecurityAssessmentNetwork,
     title: "Network security assessment | Support Facility",
     description: "Security assessment for internet-facing services, internal networks, segmentation and network controls.",
     canonical: "https://www.supportfacility.com/cybersecurity/assessment/network/",
@@ -139,7 +142,7 @@ export const pageRoutes = [
   },
   {
     path: "/cybersecurity/assessment/scada-ics",
-    Component: lazy(() => import('../pages/cybersecurity__assessment__scada-ics.jsx')),
+    Component: components.PageCybersecurityAssessmentScadaIcs,
     title: "SCADA & ICS security assessment | Support Facility",
     description: "A controlled security review of industrial control environments, architecture, access and exposure.",
     canonical: "https://www.supportfacility.com/cybersecurity/assessment/scada-ics/",
@@ -147,7 +150,7 @@ export const pageRoutes = [
   },
   {
     path: "/cybersecurity/assessment/vapt",
-    Component: lazy(() => import('../pages/cybersecurity__assessment__vapt.jsx')),
+    Component: components.PageCybersecurityAssessmentVapt,
     title: "VAPT services | Support Facility",
     description: "Vulnerability Assessment and Penetration Testing services that combine broad discovery with controlled exploitation.",
     canonical: "https://www.supportfacility.com/cybersecurity/assessment/vapt/",
@@ -155,7 +158,7 @@ export const pageRoutes = [
   },
   {
     path: "/cybersecurity/assessment/web-application",
-    Component: lazy(() => import('../pages/cybersecurity__assessment__web-application.jsx')),
+    Component: components.PageCybersecurityAssessmentWebApplication,
     title: "Web application penetration testing | Support Facility",
     description: "Manual and automated testing for authentication, authorization, data handling and business-logic weaknesses.",
     canonical: "https://www.supportfacility.com/cybersecurity/assessment/web-application/",
@@ -163,7 +166,7 @@ export const pageRoutes = [
   },
   {
     path: "/cybersecurity/compliance",
-    Component: lazy(() => import('../pages/cybersecurity__compliance.jsx')),
+    Component: components.PageCybersecurityCompliance,
     title: "Compliance & consulting services | Support Facility",
     description: "Readiness, gap assessment and advisory services for security standards and third-party risk.",
     canonical: "https://www.supportfacility.com/cybersecurity/compliance/",
@@ -171,7 +174,7 @@ export const pageRoutes = [
   },
   {
     path: "/cybersecurity/compliance/iso",
-    Component: lazy(() => import('../pages/cybersecurity__compliance__iso.jsx')),
+    Component: components.PageCybersecurityComplianceIso,
     title: "ISO compliance service | Support Facility",
     description: "ISO readiness, gap assessment, control implementation support and audit preparation.",
     canonical: "https://www.supportfacility.com/cybersecurity/compliance/iso/",
@@ -179,7 +182,7 @@ export const pageRoutes = [
   },
   {
     path: "/cybersecurity/compliance/soc-2",
-    Component: lazy(() => import('../pages/cybersecurity__compliance__soc-2.jsx')),
+    Component: components.PageCybersecurityComplianceSoc2,
     title: "SOC 2 compliance audit support | Support Facility",
     description: "Readiness assessment and advisory support for security, availability and other selected trust-service criteria.",
     canonical: "https://www.supportfacility.com/cybersecurity/compliance/soc-2/",
@@ -187,7 +190,7 @@ export const pageRoutes = [
   },
   {
     path: "/cybersecurity/compliance/third-party-risk",
-    Component: lazy(() => import('../pages/cybersecurity__compliance__third-party-risk.jsx')),
+    Component: components.PageCybersecurityComplianceThirdPartyRisk,
     title: "Third-party risk management | Support Facility",
     description: "A structured program for onboarding, assessing, monitoring and reviewing third-party security risk.",
     canonical: "https://www.supportfacility.com/cybersecurity/compliance/third-party-risk/",
@@ -195,7 +198,7 @@ export const pageRoutes = [
   },
   {
     path: "/cybersecurity/incident-response",
-    Component: lazy(() => import('../pages/cybersecurity__incident-response.jsx')),
+    Component: components.PageCybersecurityIncidentResponse,
     title: "Incident response | Support Facility",
     description: "Investigation, containment, malware analysis and post-incident reporting for suspected or confirmed security events.",
     canonical: "https://www.supportfacility.com/cybersecurity/incident-response/",
@@ -203,7 +206,7 @@ export const pageRoutes = [
   },
   {
     path: "/cybersecurity/incident-response/detection-investigation",
-    Component: lazy(() => import('../pages/cybersecurity__incident-response__detection-investigation.jsx')),
+    Component: components.PageCybersecurityIncidentResponseDetectionInvestigation,
     title: "Incident detection & investigation | Support Facility",
     description: "Rapid triage and investigation of alerts, unusual activity, compromised accounts and suspected intrusion.",
     canonical: "https://www.supportfacility.com/cybersecurity/incident-response/detection-investigation/",
@@ -211,7 +214,7 @@ export const pageRoutes = [
   },
   {
     path: "/cybersecurity/incident-response/malware-analysis",
-    Component: lazy(() => import('../pages/cybersecurity__incident-response__malware-analysis.jsx')),
+    Component: components.PageCybersecurityIncidentResponseMalwareAnalysis,
     title: "Incident response & malware analysis | Support Facility",
     description: "Incident response combined with static and dynamic malware analysis to support containment and recovery.",
     canonical: "https://www.supportfacility.com/cybersecurity/incident-response/malware-analysis/",
@@ -219,7 +222,7 @@ export const pageRoutes = [
   },
   {
     path: "/cybersecurity/incident-response/post-incident",
-    Component: lazy(() => import('../pages/cybersecurity__incident-response__post-incident.jsx')),
+    Component: components.PageCybersecurityIncidentResponsePostIncident,
     title: "Post-incident analysis & reporting | Support Facility",
     description: "Detailed reconstruction, lessons learned, control-gap analysis and reporting after containment.",
     canonical: "https://www.supportfacility.com/cybersecurity/incident-response/post-incident/",
@@ -227,7 +230,7 @@ export const pageRoutes = [
   },
   {
     path: "/cybersecurity/security-operations",
-    Component: lazy(() => import('../pages/cybersecurity__security-operations.jsx')),
+    Component: components.PageCybersecuritySecurityOperations,
     title: "Security operations | Support Facility",
     description: "Monitoring, SIEM and threat-intelligence services designed to improve detection and response.",
     canonical: "https://www.supportfacility.com/cybersecurity/security-operations/",
@@ -235,7 +238,7 @@ export const pageRoutes = [
   },
   {
     path: "/cybersecurity/security-operations/siem",
-    Component: lazy(() => import('../pages/cybersecurity__security-operations__siem.jsx')),
+    Component: components.PageCybersecuritySecurityOperationsSiem,
     title: "SIEM services | Support Facility",
     description: "Security Information and Event Management planning, implementation, tuning and operational support.",
     canonical: "https://www.supportfacility.com/cybersecurity/security-operations/siem/",
@@ -243,7 +246,7 @@ export const pageRoutes = [
   },
   {
     path: "/cybersecurity/security-operations/threat-intelligence",
-    Component: lazy(() => import('../pages/cybersecurity__security-operations__threat-intelligence.jsx')),
+    Component: components.PageCybersecuritySecurityOperationsThreatIntelligence,
     title: "Threat intelligence | Support Facility",
     description: "Threat monitoring, intelligence analysis and actionable reporting aligned with your organization and assets.",
     canonical: "https://www.supportfacility.com/cybersecurity/security-operations/threat-intelligence/",
@@ -251,7 +254,7 @@ export const pageRoutes = [
   },
   {
     path: "/cybersecurity/security-operations/threat-monitoring",
-    Component: lazy(() => import('../pages/cybersecurity__security-operations__threat-monitoring.jsx')),
+    Component: components.PageCybersecuritySecurityOperationsThreatMonitoring,
     title: "24/7 threat monitoring & response | Support Facility",
     description: "Continuous security monitoring, alert validation, escalation and response coordination.",
     canonical: "https://www.supportfacility.com/cybersecurity/security-operations/threat-monitoring/",
@@ -259,7 +262,7 @@ export const pageRoutes = [
   },
   {
     path: "/free-trial",
-    Component: lazy(() => import('../pages/free-trial.jsx')),
+    Component: components.PageFreeTrial,
     title: "Start a Free Technical Support Trial | Support Facility",
     description: "Request a trial for one basic technical issue and discuss the right long-term support model.",
     canonical: "https://www.supportfacility.com/free-trial/",
@@ -267,7 +270,7 @@ export const pageRoutes = [
   },
   {
     path: "/",
-    Component: lazy(() => import('../pages/home.jsx')),
+    Component: components.PageHome,
     title: "Support Facility | 24/7 Technical Operations",
     description: "24/7 technical support, cloud and infrastructure solutions, cybersecurity services and white-label WordPress development.",
     canonical: "https://www.supportfacility.com/",
@@ -275,7 +278,7 @@ export const pageRoutes = [
   },
   {
     path: "/planning-out-of-hours-support-handover",
-    Component: lazy(() => import('../pages/planning-out-of-hours-support-handover.jsx')),
+    Component: components.PagePlanningOutOfHoursSupportHandover,
     title: "A clearer handover for out-of-hours support | Support Facility",
     description: "Give the next shift enough context to continue the work without making customers start again.",
     canonical: "https://www.supportfacility.com/planning-out-of-hours-support-handover/",
@@ -283,7 +286,7 @@ export const pageRoutes = [
   },
   {
     path: "/planning-white-label-wordpress-delivery",
-    Component: lazy(() => import('../pages/planning-white-label-wordpress-delivery.jsx')),
+    Component: components.PagePlanningWhiteLabelWordpressDelivery,
     title: "What to agree before outsourcing WordPress delivery | Support Facility",
     description: "A practical starting point for agencies adding development capacity without handing over the client relationship.",
     canonical: "https://www.supportfacility.com/planning-white-label-wordpress-delivery/",
@@ -291,7 +294,7 @@ export const pageRoutes = [
   },
   {
     path: "/plans",
-    Component: lazy(() => import('../pages/plans.jsx')),
+    Component: components.PagePlans,
     title: "Technical Support Plans | Support Facility",
     description: "Compare shared team, dedicated team, server support and website support options.",
     canonical: "https://www.supportfacility.com/plans/",
@@ -299,7 +302,7 @@ export const pageRoutes = [
   },
   {
     path: "/privacy",
-    Component: lazy(() => import('../pages/privacy.jsx')),
+    Component: components.PagePrivacy,
     title: "Privacy | Support Facility",
     description: "Support Facility privacy information.",
     canonical: "https://www.supportfacility.com/privacy/",
@@ -307,7 +310,7 @@ export const pageRoutes = [
   },
   {
     path: "/resources",
-    Component: lazy(() => import('../pages/resources.jsx')),
+    Component: components.PageResources,
     title: "Technical Knowledge Centre | Support Facility",
     description: "Practical guides for hosting support, servers, cloud operations, WordPress and technical teams.",
     canonical: "https://www.supportfacility.com/resources/",
@@ -315,7 +318,7 @@ export const pageRoutes = [
   },
   {
     path: "/resources/cloud-migration-readiness",
-    Component: lazy(() => import('../pages/resources__cloud-migration-readiness.jsx')),
+    Component: components.PageResourcesCloudMigrationReadiness,
     title: "A practical cloud migration readiness checklist | Support Facility",
     description: "Cloud migration planning works best when business priorities, technical dependencies and operational ownership are reviewed together.",
     canonical: "https://www.supportfacility.com/resources/cloud-migration-readiness/",
@@ -323,7 +326,7 @@ export const pageRoutes = [
   },
   {
     path: "/resources/hosting-support-escalation-matrix",
-    Component: lazy(() => import('../pages/resources__hosting-support-escalation-matrix.jsx')),
+    Component: components.PageResourcesHostingSupportEscalationMatrix,
     title: "Building an escalation matrix that customers understand | Support Facility",
     description: "A useful escalation matrix defines ownership before a difficult ticket arrives. It tells frontline staff what they can resolve, when technical specialists step in and who communicates with the customer.",
     canonical: "https://www.supportfacility.com/resources/hosting-support-escalation-matrix/",
@@ -331,7 +334,7 @@ export const pageRoutes = [
   },
   {
     path: "/resources/safer-third-party-technical-access",
-    Component: lazy(() => import('../pages/resources__safer-third-party-technical-access.jsx')),
+    Component: components.PageResourcesSaferThirdPartyTechnicalAccess,
     title: "A safer checklist for third-party technical access | Support Facility",
     description: "Technical partners often need privileged access. A controlled process limits that access to the people, systems and time required for the work.",
     canonical: "https://www.supportfacility.com/resources/safer-third-party-technical-access/",
@@ -339,7 +342,7 @@ export const pageRoutes = [
   },
   {
     path: "/resources/server-operations-handover",
-    Component: lazy(() => import('../pages/resources__server-operations-handover.jsx')),
+    Component: components.PageResourcesServerOperationsHandover,
     title: "What to document before handing over server operations | Support Facility",
     description: "A clean server handover reduces risk by making infrastructure, responsibilities and emergency procedures understandable before access changes hands.",
     canonical: "https://www.supportfacility.com/resources/server-operations-handover/",
@@ -347,7 +350,7 @@ export const pageRoutes = [
   },
   {
     path: "/resources/shared-support-vs-dedicated-team",
-    Component: lazy(() => import('../pages/resources__shared-support-vs-dedicated-team.jsx')),
+    Component: components.PageResourcesSharedSupportVsDedicatedTeam,
     title: "Shared support or dedicated team: choosing the right model | Support Facility",
     description: "The best model depends on volume, complexity, schedule and how much environment-specific knowledge the work requires.",
     canonical: "https://www.supportfacility.com/resources/shared-support-vs-dedicated-team/",
@@ -355,7 +358,7 @@ export const pageRoutes = [
   },
   {
     path: "/resources/white-label-development-queue",
-    Component: lazy(() => import('../pages/resources__white-label-development-queue.jsx')),
+    Component: components.PageResourcesWhiteLabelDevelopmentQueue,
     title: "How agencies can structure a white-label development queue | Support Facility",
     description: "A white-label delivery partner works best when requests arrive with consistent context, priorities and acceptance criteria.",
     canonical: "https://www.supportfacility.com/resources/white-label-development-queue/",
@@ -363,7 +366,7 @@ export const pageRoutes = [
   },
   {
     path: "/security",
-    Component: lazy(() => import('../pages/security.jsx')),
+    Component: components.PageSecurity,
     title: "Security & Operating Process | Support Facility",
     description: "How Support Facility approaches access, documentation, escalation and responsible onboarding.",
     canonical: "https://www.supportfacility.com/security/",
@@ -371,7 +374,7 @@ export const pageRoutes = [
   },
   {
     path: "/server-management",
-    Component: lazy(() => import('../pages/server-management.jsx')),
+    Component: components.PageServerManagement,
     title: "Server management | Support Facility",
     description: "Server setup, monitoring, hardening, troubleshooting, optimization and migration support across established hosting environments.",
     canonical: "https://www.supportfacility.com/server-management/",
@@ -379,15 +382,15 @@ export const pageRoutes = [
   },
   {
     path: "/solutions",
-    Component: lazy(() => import('../pages/solutions.jsx')),
-    title: "Solutions \u2013 Support Facility",
+    Component: components.PageSolutions,
+    title: "Solutions – Support Facility",
     description: "24/7 technical operations. Built around your business.",
     canonical: "https://www.supportfacility.com/solutions/",
     bodyClass: "wp-singular page-template-default page page-id-16 page-parent wp-embed-responsive wp-theme-astra wp-child-theme-astra-supportfacility-child sf-site ast-desktop ast-plain-container ast-no-sidebar astra-4.14.1 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header ast-normal-title-enabled",
   },
   {
     path: "/solutions/cloud-experts",
-    Component: lazy(() => import('../pages/solutions__cloud-experts.jsx')),
+    Component: components.PageSolutionsCloudExperts,
     title: "Cloud experts | Support Facility",
     description: "Flexible access to experienced Linux, AWS, Azure, DevOps, Kubernetes, Python and security professionals.",
     canonical: "https://www.supportfacility.com/solutions/cloud-experts/",
@@ -395,7 +398,7 @@ export const pageRoutes = [
   },
   {
     path: "/solutions/cloud-experts/aws",
-    Component: lazy(() => import('../pages/solutions__cloud-experts__aws.jsx')),
+    Component: components.PageSolutionsCloudExpertsAws,
     title: "AWS experts | Support Facility",
     description: "AWS architecture, migration, security, optimization and ongoing operational support.",
     canonical: "https://www.supportfacility.com/solutions/cloud-experts/aws/",
@@ -403,7 +406,7 @@ export const pageRoutes = [
   },
   {
     path: "/solutions/cloud-experts/azure",
-    Component: lazy(() => import('../pages/solutions__cloud-experts__azure.jsx')),
+    Component: components.PageSolutionsCloudExpertsAzure,
     title: "Microsoft Azure experts | Support Facility",
     description: "Azure architecture, migration, identity, monitoring and ongoing cloud operations.",
     canonical: "https://www.supportfacility.com/solutions/cloud-experts/azure/",
@@ -411,7 +414,7 @@ export const pageRoutes = [
   },
   {
     path: "/solutions/cloud-experts/devops",
-    Component: lazy(() => import('../pages/solutions__cloud-experts__devops.jsx')),
+    Component: components.PageSolutionsCloudExpertsDevops,
     title: "DevOps experts | Support Facility",
     description: "Specialist help for pipelines, automation, infrastructure as code and platform reliability.",
     canonical: "https://www.supportfacility.com/solutions/cloud-experts/devops/",
@@ -419,7 +422,7 @@ export const pageRoutes = [
   },
   {
     path: "/solutions/cloud-experts/kubernetes",
-    Component: lazy(() => import('../pages/solutions__cloud-experts__kubernetes.jsx')),
+    Component: components.PageSolutionsCloudExpertsKubernetes,
     title: "Kubernetes experts | Support Facility",
     description: "Specialist Kubernetes support for architecture, deployment, security, upgrades and incidents.",
     canonical: "https://www.supportfacility.com/solutions/cloud-experts/kubernetes/",
@@ -427,7 +430,7 @@ export const pageRoutes = [
   },
   {
     path: "/solutions/cloud-experts/linux",
-    Component: lazy(() => import('../pages/solutions__cloud-experts__linux.jsx')),
+    Component: components.PageSolutionsCloudExpertsLinux,
     title: "Linux experts | Support Facility",
     description: "Linux administration, troubleshooting, hardening, performance tuning and automation for production environments.",
     canonical: "https://www.supportfacility.com/solutions/cloud-experts/linux/",
@@ -435,7 +438,7 @@ export const pageRoutes = [
   },
   {
     path: "/solutions/cloud-experts/python",
-    Component: lazy(() => import('../pages/solutions__cloud-experts__python.jsx')),
+    Component: components.PageSolutionsCloudExpertsPython,
     title: "Python experts | Support Facility",
     description: "Python development, automation, API, data integration and application support.",
     canonical: "https://www.supportfacility.com/solutions/cloud-experts/python/",
@@ -443,7 +446,7 @@ export const pageRoutes = [
   },
   {
     path: "/solutions/cloud-experts/security",
-    Component: lazy(() => import('../pages/solutions__cloud-experts__security.jsx')),
+    Component: components.PageSolutionsCloudExpertsSecurity,
     title: "Security experts | Support Facility",
     description: "Security assessment, hardening, monitoring and response support aligned with your environment.",
     canonical: "https://www.supportfacility.com/solutions/cloud-experts/security/",
@@ -451,7 +454,7 @@ export const pageRoutes = [
   },
   {
     path: "/solutions/cloud-solutions",
-    Component: lazy(() => import('../pages/solutions__cloud-solutions.jsx')),
+    Component: components.PageSolutionsCloudSolutions,
     title: "Cloud solutions | Support Facility",
     description: "Cloud architecture, migration, optimization and ongoing management across public, private and hybrid environments.",
     canonical: "https://www.supportfacility.com/solutions/cloud-solutions/",
@@ -459,7 +462,7 @@ export const pageRoutes = [
   },
   {
     path: "/solutions/dedicated-team",
-    Component: lazy(() => import('../pages/solutions__dedicated-team.jsx')),
+    Component: components.PageSolutionsDedicatedTeam,
     title: "Dedicated technical team | Support Facility",
     description: "Build a dedicated team for defined hours, continuous coverage or specialist technical work.",
     canonical: "https://www.supportfacility.com/solutions/dedicated-team/",
@@ -467,7 +470,7 @@ export const pageRoutes = [
   },
   {
     path: "/solutions/devops",
-    Component: lazy(() => import('../pages/solutions__devops.jsx')),
+    Component: components.PageSolutionsDevops,
     title: "DevOps services | Support Facility",
     description: "DevOps consulting and hands-on implementation for automation, releases, infrastructure and observability.",
     canonical: "https://www.supportfacility.com/solutions/devops/",
@@ -475,7 +478,7 @@ export const pageRoutes = [
   },
   {
     path: "/solutions/help-desk",
-    Component: lazy(() => import('../pages/solutions__help-desk.jsx')),
+    Component: components.PageSolutionsHelpDesk,
     title: "Help desk support | Support Facility",
     description: "A white-label team that works within your help desk, processes and escalation rules.",
     canonical: "https://www.supportfacility.com/solutions/help-desk/",
@@ -483,7 +486,7 @@ export const pageRoutes = [
   },
   {
     path: "/solutions/infrastructure-solutions",
-    Component: lazy(() => import('../pages/solutions__infrastructure-solutions.jsx')),
+    Component: components.PageSolutionsInfrastructureSolutions,
     title: "Infrastructure solutions | Support Facility",
     description: "Design, migration and management support for compute, storage, networking and virtualization.",
     canonical: "https://www.supportfacility.com/solutions/infrastructure-solutions/",
@@ -491,7 +494,7 @@ export const pageRoutes = [
   },
   {
     path: "/solutions/kubernetes-solutions",
-    Component: lazy(() => import('../pages/solutions__kubernetes-solutions.jsx')),
+    Component: components.PageSolutionsKubernetesSolutions,
     title: "Kubernetes solutions | Support Facility",
     description: "Kubernetes architecture, deployment, migration, observability, security and troubleshooting.",
     canonical: "https://www.supportfacility.com/solutions/kubernetes-solutions/",
@@ -499,7 +502,7 @@ export const pageRoutes = [
   },
   {
     path: "/solutions/technical-support",
-    Component: lazy(() => import('../pages/solutions__technical-support.jsx')),
+    Component: components.PageSolutionsTechnicalSupport,
     title: "Technical support outsourcing | Support Facility",
     description: "Flexible Level 1, Level 2 and Level 3 technical coverage for hosting companies, SaaS teams, agencies and online businesses.",
     canonical: "https://www.supportfacility.com/solutions/technical-support/",
@@ -507,7 +510,7 @@ export const pageRoutes = [
   },
   {
     path: "/terms",
-    Component: lazy(() => import('../pages/terms.jsx')),
+    Component: components.PageTerms,
     title: "Terms | Support Facility",
     description: "Support Facility website terms.",
     canonical: "https://www.supportfacility.com/terms/",
@@ -515,7 +518,7 @@ export const pageRoutes = [
   },
   {
     path: "/thank-you",
-    Component: lazy(() => import('../pages/thank-you.jsx')),
+    Component: components.PageThankYou,
     title: "Thank You | Support Facility",
     description: "24/7 technical operations. Built around your business.",
     canonical: "https://www.supportfacility.com/thank-you/",
@@ -523,7 +526,7 @@ export const pageRoutes = [
   },
   {
     path: "/website-services",
-    Component: lazy(() => import('../pages/website-services.jsx')),
+    Component: components.PageWebsiteServices,
     title: "White-label development | Support Facility",
     description: "White-label WordPress development, maintenance, performance work and migrations delivered under your process.",
     canonical: "https://www.supportfacility.com/website-services/",
@@ -531,7 +534,7 @@ export const pageRoutes = [
   },
   {
     path: "/writing-a-cybersecurity-assessment-brief",
-    Component: lazy(() => import('../pages/writing-a-cybersecurity-assessment-brief.jsx')),
+    Component: components.PageWritingACybersecurityAssessmentBrief,
     title: "Start a cybersecurity assessment with a better brief | Support Facility",
     description: "Clarify the business question, authorized scope and expected handover before requesting security testing.",
     canonical: "https://www.supportfacility.com/writing-a-cybersecurity-assessment-brief/",

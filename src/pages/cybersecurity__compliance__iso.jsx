@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { PageStyles } from '../components/PageStyles'
-import css from '../pagecss/cybersecurity__compliance__iso.js'
+import css from '../pagecss/css_1f4125465b.js'
 
 export default function PageCybersecurityComplianceIso() {
   return (

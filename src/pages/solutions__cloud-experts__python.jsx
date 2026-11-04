@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { PageStyles } from '../components/PageStyles'
-import css from '../pagecss/solutions__cloud-experts__python.js'
+import css from '../pagecss/css_1f4125465b.js'
 
 export default function PageSolutionsCloudExpertsPython() {
   return (

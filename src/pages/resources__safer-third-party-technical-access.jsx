@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { PageStyles } from '../components/PageStyles'
-import css from '../pagecss/resources__safer-third-party-technical-access.js'
+import css from '../pagecss/css_1f4125465b.js'
 
 export default function PageResourcesSaferThirdPartyTechnicalAccess() {
   return (

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { PageStyles } from '../components/PageStyles'
-import css from '../pagecss/writing-a-cybersecurity-assessment-brief.js'
+import css from '../pagecss/css_86d0b4d576.js'
 
 export default function PageWritingACybersecurityAssessmentBrief() {
   return (

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { PageStyles } from '../components/PageStyles'
-import css from '../pagecss/author__tony.js'
+import css from '../pagecss/css_120a883308.js'
 
 export default function PageAuthorTony() {
   return (

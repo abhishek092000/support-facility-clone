@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { PageStyles } from '../components/PageStyles'
-import css from '../pagecss/category__wordpress-agencies.js'
+import css from '../pagecss/css_891fc1db98.js'
 
 export default function PageCategoryWordpressAgencies() {
   return (

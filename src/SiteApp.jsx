@@ -1,4 +1,4 @@
-import { Suspense, useEffect } from 'react'
+import { useEffect } from 'react'
 import { Link, Route, Routes, useLocation } from 'react-router-dom'
 import Header from './generated/Header'
 import Footer from './generated/Footer'
@@ -71,14 +71,12 @@ export function SiteApp() {
       <ScrollToTop />
       <PageMeta />
       <Header key="header" />
-      <Suspense fallback={null}>
-        <Routes>
-          {pageRoutes.map(({ path, Component }) => (
-            <Route key={path} path={path} element={<Component />} />
-          ))}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Suspense>
+      <Routes>
+        {pageRoutes.map(({ path, Component }) => (
+          <Route key={path} path={path} element={<Component />} />
+        ))}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
       <Footer key="footer" />
     </>
   )

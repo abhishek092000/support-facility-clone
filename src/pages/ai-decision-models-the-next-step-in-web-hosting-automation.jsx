@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { PageStyles } from '../components/PageStyles'
-import css from '../pagecss/ai-decision-models-the-next-step-in-web-hosting-automation.js'
+import css from '../pagecss/css_b7145d68fd.js'
 
 export default function PageAiDecisionModelsTheNextStepInWebHostingAutomation() {
   return (
